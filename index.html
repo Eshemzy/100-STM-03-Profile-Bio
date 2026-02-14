@@ -9,56 +9,90 @@
 </head>
 <body>
   <div class="web-container">
-    <header class="site-header">
+    <header class="site-header" role="banner">
       <div class="header-inner">
         <div class="logo-cont">
-          <a href="/home"></a>
+          <a href="/home">Profile</a>
         </div>
 
         <nav class="nav">
-          <a href="/contact"></a>
+          <div class="nav-mobile">
+            <button type="button" class="hamburger" aria-label="Toggle navigation">
+              <div class="bar bar--one"></div>
+              <div class="bar bar--two"></div>
+              <div class="bar bar--three"></div>
+            </button>
+          </div>
+
+          <div class="nav-desktop" aria-label="main navigation" role="navigation">
+            <ul>
+              <li><a href="/linkdln">Linkdln</a></li>
+              <li><a href="/github">Github</a></li>
+              <li><a href="/x">X</a></li>
+            </ul>
+
+            <a href="/contact" class="btn cta-m">Contact Me</a>
+          </div>
         </nav>
       </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" role="main">
       <div class="main-inner">
         <section class="profile-cont">
-          <div class="avatar-wrapper">
+          <div class="profile__avatar">
+            <span class="followers">999k</span>
+            <span class="likes">555k</span>
+            <span class="views">777k</span>
 
+            <img src="images/Pixar_Eshemzy_Shirt-removebg-preview.png" alt="3d portrait of Eshemzy">
           </div>
 
-          <div class="bio-info">
-            <div class="intro">
-              <h1></h1>
-              <h2></h2>
+          <div class="profile__bio">
+            <div class="bio-intro">
+              <h1>Hi, its Eshemzy</h1>
+              <h2>I am a Creative Front-End Developer</h2>
             </div>
 
-            <div class="skills">
-
+            <div class="profile__stack">
+              <div class="stack html--stack">
+                <img src="assets/icons/html-5 transp.png" alt="html5 icon">
+                <p>HTML5</p>
+              </div>
+              <div class="stack css--stack">
+                <img src="assets/icons/css-3 transp.png" alt="css3 icon">
+                <p>CSS3</p>
+              </div>
             </div>
 
             <div class="about-wrapper">
-              <div class="about">
-                
+              <div class="profile__about">
+                <h3>Aout Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis distinctio, natus ipsum consequuntur, nemo obcaecati pariatur expedita amet, aperiam explicabo accusantium excepturi! Quod exercitationem quam tempore soluta, officia in ipsum.</p>
               </div>
-              <div class="others">
-
+              <div class="profile__skills">
+                <h3>Skills</h3>
+                <ul>
+                  <li>UI/UX</li>
+                  <li>Web & Mobile</li>
+                  <li>UI/UX</li>
+                  <li>Web & Mobile</li>
+                </ul>
               </div>
             </div>
 
-            <div class="contact-wrapper">
-              <a href="/call"></a>
-              <a href="/hire"></a>
+            <div class="profile__cta">
+              <a href="/call" class="btn cta-m">Get in Touch</a>
+              <a href="/hire" class="btn cta-s">Learn More!</a>
             </div>
           </div>
         </section>
       </div>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="footer-inner">
-        <p></p>
+        <p>Eshemzy 2026 | All Rights Reserved</p>
       </div>
     </footer>
   </div>
