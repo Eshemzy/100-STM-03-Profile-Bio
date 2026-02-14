@@ -213,14 +213,39 @@ button.hamburger:active {
   gap: 0.5rem;
   /* border: 1px solid #000; */
 }
-.profile__about,
+.profile__about {
+  background-color: #faffc9;
+  padding: var(--space-1);
+  border-radius: var(--radius-2);
+}
 .profile__skills {
-  /* border-radius: var(--radius-2); */
+  background-color: #dad5ff;
+  border-radius: var(--radius-2);
   padding: var(--space-1);
 }
-.profile__about h3 {
+.about-wrapper h3 {
   /* background-color: var(--light-clr); */
   display: inline-block;
   padding: var(--space-1) 0;
   border-radius: var(--radius-1);
+  color: var(--pry-clr);
+}
+.about-wrapper li {
+  font-weight: 500;
+}
+
+.profile__cta {
+  display: flex;
+  gap: var(--space-3);
+}
+.btn {
+  background: var(--pry-clr);
+  color: var(--light-clr);
+  padding: var(--space-1);
+  border-radius: var(--radius-1);
+  font-weight: 600;
+  transition: background 300ms ease;
+}
+.btn:hover {
+  background: var(--pry-clr-fade);
 }
