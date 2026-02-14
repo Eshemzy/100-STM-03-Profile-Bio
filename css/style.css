@@ -141,8 +141,8 @@ button.hamburger:active {
   transform: rotate(-45deg);
 }
 .profile__avatar img {
-  position: absolute;
   width: 100%;
   max-width: 170px;
   height: auto;
+  object-fit: cover;
 }
