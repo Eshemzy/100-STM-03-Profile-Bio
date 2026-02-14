@@ -109,11 +109,16 @@ button.hamburger:active {
   box-shadow: 0 0 20px #fff;
 } */
 
+.profile-cont {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
 .profile__avatar {
   position: relative;
   display: flex;
   max-width: 100%;
-  height: 30vh;
+  height: 225px;
   background: var(--pry-clr);
   overflow: hidden;
   border-radius: 10px 10px 50px 50px;
@@ -124,18 +129,18 @@ button.hamburger:active {
 }
 .followers {
   font-size: var(--fs-5);
-  right: 50%;
+  right: 40%;
   top: 30%;
-  transform: rotate(-45deg);
+  transform: rotate(-25deg);
 }
 .likes {
-  font-size: var(--fs-5);
+  font-size: var(--fs-3);
   right: 30%;
   bottom: 10%;
   transform: rotate(25deg);
 }
 .views {
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   right: 10%;
   bottom: 40%;
   transform: rotate(-45deg);
@@ -145,4 +150,77 @@ button.hamburger:active {
   max-width: 170px;
   height: auto;
   object-fit: cover;
+}
+.profile__bio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: 0 var(--space-3);
+}
+.bio-intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  line-height: 1.2;
+}
+.bio-intro::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  left: -10px;
+  border-radius: 20px;
+  background-color: var(--pry-clr);
+}
+.bio-intro h1 {
+  font-size: var(--fs-6);
+  font-weight: 700;
+}
+.bio-intro h2 {
+  font-size: var(--fs-3);
+  font-weight: 800;
+}
+
+.profile__stack {
+  display: flex;
+  gap: 1rem;
+}
+.stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  padding: 0.15rem;
+  border-radius: var(--radius-1);
+}
+.html--stack {
+  border-color: var(--pry-clr);
+}
+.css--stack {
+  border-color: var(--sec-clr);
+}
+.stack img {
+  max-width: 100%;
+  width: 20px;
+  height: auto;
+}
+.stack p {
+  font-weight: 600;
+}
+
+.about-wrapper {
+  display: grid;
+  gap: 0.5rem;
+  /* border: 1px solid #000; */
+}
+.profile__about,
+.profile__skills {
+  /* border-radius: var(--radius-2); */
+  padding: var(--space-1);
+}
+.profile__about h3 {
+  /* background-color: var(--light-clr); */
+  display: inline-block;
+  padding: var(--space-1) 0;
+  border-radius: var(--radius-1);
 }
