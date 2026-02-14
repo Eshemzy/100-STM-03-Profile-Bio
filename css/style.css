@@ -249,3 +249,10 @@ button.hamburger:active {
 .btn:hover {
   background: var(--pry-clr-fade);
 }
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-1) 0;
+}
