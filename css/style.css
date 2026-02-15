@@ -270,6 +270,8 @@ button.hamburger {
 }
 
 .footer-inner {
+  background: #212a37;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
