@@ -78,11 +78,11 @@ a, button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-1) var(--space-4);
+  padding: clamp(0.1rem, -0.095rem + 1.11vw, 0.3rem) clamp(0.5rem, -0.476rem + 5.57vw, 1.5rem);
   border-bottom: 1px solid lightgrey;
 }
 .logo-cont a {
-  font-size: var(--fs-5);
+  font-size: clamp(1.2rem, 0.42rem + 4.46vw, 2rem);
   font-weight: 600;
   color: var(--pry-clr);
 }
@@ -95,11 +95,10 @@ button.hamburger {
   cursor: pointer;
 }
 .bar {
-  width: 35px;
-  height: 5px;
+  width: clamp(1.563rem, 0.953rem + 3.48vw, 2.188rem);
+  height: clamp(0.188rem, 0.066rem + 0.7vw, 0.313rem);
   background-color: var(--pry-clr);
-  border-radius: 1rem;
-  transition: transform 0.4s ease, border-radius 0.2s ease;
+  border-radius: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
 }
 .nav-desktop {
   display: none;
@@ -108,50 +107,50 @@ button.hamburger {
 .profile-cont {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
 }
 .profile__avatar {
   position: relative;
   display: flex;
   max-width: 100%;
-  height: 225px;
+  height: clamp(10rem, 6.037rem + 22.65vw, 14.063rem);
   background: var(--pry-clr);
   overflow: hidden;
-  border-radius: 10px 10px 50px 50px;
+  border-radius: clamp(0.313rem, 0.008rem + 1.74vw, 0.625rem) clamp(0.313rem, 0.008rem + 1.74vw, 0.625rem) clamp(1.563rem, 0.038rem + 8.71vw, 3.125rem) clamp(1.563rem, 0.038rem + 8.71vw, 3.125rem);
 }
 .profile__avatar div {
   position: absolute;
   color: var(--light-clr);
 }
 .followers {
-  font-size: var(--fs-5);
+  font-size: clamp(1.2rem, 0.42rem + 4.46vw, 2rem);
   right: 40%;
   top: 30%;
   transform: rotate(-25deg);
 }
 .likes {
-  font-size: var(--fs-3);
+  font-size: clamp(0.9rem, 0.51rem + 2.23vw, 1.3rem);
   right: 30%;
   bottom: 10%;
   transform: rotate(25deg);
 }
 .views {
-  font-size: var(--fs-4);
+  font-size: clamp(1.1rem, 0.71rem + 2.23vw, 1.5rem);
   right: 10%;
   bottom: 40%;
   transform: rotate(-45deg);
 }
 .profile__avatar img {
   width: 100%;
-  max-width: 170px;
+  max-width: clamp(6.25rem, 1.982rem + 24.39vw, 10.625rem);
   height: auto;
   object-fit: cover;
 }
 .profile__bio {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  padding: 0 var(--space-3);
+  gap: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
+  padding: 0 clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
 }
 .bio-intro {
   display: flex;
@@ -162,24 +161,24 @@ button.hamburger {
 .bio-intro::before {
   position: absolute;
   content: "";
-  width: 5px;
+  width: clamp(0.188rem, 0.066rem + 0.7vw, 0.313rem);
   height: 100%;
-  left: -10px;
+  left: -0.625rem;
   border-radius: 20px;
   background-color: var(--pry-clr);
 }
 .bio-intro h1 {
-  font-size: var(--fs-6);
+  font-size: clamp(1.8rem, 0.629rem + 6.69vw, 3rem);
   font-weight: 700;
 }
 .bio-intro h2 {
-  font-size: var(--fs-3);
+  font-size: clamp(0.75rem, 0.213rem + 3.07vw, 1.3rem);
   font-weight: 800;
 }
 
 .profile__stack {
   display: flex;
-  gap: 1rem;
+  gap: clamp(0.2rem, -0.58rem + 4.46vw, 1rem);
 }
 .stack {
   display: flex;
@@ -187,7 +186,8 @@ button.hamburger {
   justify-content: center;
   border: 1px solid;
   padding: 0.15rem;
-  border-radius: var(--radius-1);
+  border-radius: clamp(0.3rem, 0.105rem + 1.11vw, 0.5rem);
+  font-size: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
 }
 .html--stack {
   border-color: var(--pry-clr);
@@ -197,7 +197,7 @@ button.hamburger {
 }
 .stack img {
   max-width: 100%;
-  width: 20px;
+  width: clamp(0.813rem, 0.691rem + 0.7vw, 0.938rem);
   height: auto;
 }
 .stack p {
@@ -206,17 +206,17 @@ button.hamburger {
 
 .about-wrapper {
   display: grid;
-  gap: 0.5rem;
+  gap: clamp(0.25rem, 0.006rem + 1.39vw, 0.5rem);
 }
 .profile__about {
   background-color: #fcffdf;
-  padding: var(--space-1) var(--radius-2);
-  border-radius: var(--radius-2);
+  padding: clamp(0.1rem, -0.095rem + 1.11vw, 0.3rem) clamp(0.3rem, 0.105rem + 1.11vw, 0.5rem);
+  border-radius: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
 }
 .profile__skills {
   background-color: #f3f1ff;
-  border-radius: var(--radius-2);
-  padding: var(--space-1) var(--radius-2);
+  padding: clamp(0.1rem, -0.095rem + 1.11vw, 0.3rem) clamp(0.3rem, 0.105rem + 1.11vw, 0.5rem);
+  border-radius: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
 }
 .profile__skills ul {
   list-style: none;
@@ -228,11 +228,16 @@ button.hamburger {
   border-bottom: 1px solid lightgrey;
 }
 .about-wrapper h3 {
+  font-size: clamp(0.938rem, 0.755rem + 1.05vw, 1.125rem);
   background-color: #fffffc;
   display: inline-block;
   padding: 0 var(--space-1);
   border-radius: var(--radius-1);
   color: var(--pry-clr);
+}
+.about-wrapper p,
+.about-wrapper li {
+  font-size: clamp(0.8rem, 0.605rem + 1.11vw, 1rem);
 }
 .about-wrapper li {
   font-weight: 500;
@@ -240,11 +245,12 @@ button.hamburger {
 
 .profile__cta {
   display: flex;
-  gap: var(--space-3);
+  gap: clamp(0.25rem, -0.482rem + 4.18vw, 1rem);
 }
 .btn {
-  padding: var(--space-1);
-  border-radius: var(--radius-1);
+  padding: clamp(0.1rem, -0.095rem + 1.11vw, 0.3rem) clamp(0.3rem, 0.105rem + 1.11vw, 0.5rem);
+  border-radius: clamp(0.25rem, 0.006rem + 1.39vw, 0.5rem);
+  font-size: clamp(0.8rem, 0.605rem + 1.11vw, 1rem);
   font-weight: 600;
   transition: background 300ms ease;
 }
@@ -268,4 +274,7 @@ button.hamburger {
   justify-content: center;
   align-items: center;
   padding: var(--space-1) 0;
+}
+.footer-inner p {
+  font-size: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
 }
