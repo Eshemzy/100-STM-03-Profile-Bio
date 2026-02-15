@@ -109,11 +109,6 @@ button.hamburger {
   display: grid;
   gap: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
 }
-/* .profile-cont {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
-} */
 .profile__avatar {
   box-shadow: 2px 2px 5px var(--sec-clr-fade), -2px -2px 5px var(--pry-clr-fade), 0 0 10px #494949;
   position: relative;
@@ -291,6 +286,7 @@ button.hamburger {
   font-size: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
 }
 
+
 @media screen and (min-width: 577px) {
   .nav-mobile {
     display: none;
@@ -310,6 +306,8 @@ button.hamburger {
     gap: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
   }
 }
+
+
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .header-inner,
   .main-inner,
@@ -339,6 +337,8 @@ button.hamburger {
     grid-template-columns: 2fr 1fr;
   }
 }
+
+
 @media screen and (min-width: 769px) {
   .header-inner,
   .main-inner,
@@ -369,5 +369,10 @@ button.hamburger {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+/* @media screen and (min-width: 769px) and (max-width: 1200px) {
 }
+
+
+@media screen and (min-width: 834px) {
+} */
