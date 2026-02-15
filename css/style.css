@@ -375,11 +375,26 @@ button.hamburger {
   }
 }
 
+@media screen and (min-width: 834px) {
+  .main-inner {
+    padding: 0 4rem;
+  }
+  .profile-cont {
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+  }
+  .profile__avatar {
+    height: 100%;
+    border-radius: 50px 15px 15px 50px;
+  }
+  .profile__avatar img {
+    max-width: 15rem;
+    position: absolute;
+    bottom: 0;
+  }
+}
 
-
-/* @media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 834px) and (max-width: 1200px) {
 }
 
 
-@media screen and (min-width: 834px) {
-} */
