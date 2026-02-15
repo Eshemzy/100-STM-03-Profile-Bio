@@ -83,7 +83,7 @@ a, button {
   padding: clamp(0.1rem, -0.095rem + 1.11vw, 0.3rem) clamp(0.5rem, -0.476rem + 5.57vw, 1.5rem);
 }
 .logo-cont a {
-  font-size: clamp(1.2rem, 0.42rem + 4.46vw, 2rem);
+  font-size: clamp(1.2rem, 0.907rem + 1.67vw, 1.5rem);
   font-weight: 600;
   color: var(--pry-clr);
 }
@@ -106,11 +106,16 @@ button.hamburger {
 }
 
 .profile-cont {
+  display: grid;
+  gap: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
+}
+/* .profile-cont {
   display: flex;
   flex-direction: column;
   gap: clamp(0.5rem, 0.012rem + 2.79vw, 1rem);
-}
+} */
 .profile__avatar {
+  box-shadow: 2px 2px 5px var(--sec-clr-fade), -2px -2px 5px var(--pry-clr-fade), 0 0 10px #494949;
   position: relative;
   display: flex;
   max-width: 100%;
@@ -158,6 +163,9 @@ button.hamburger {
   flex-direction: column;
   position: relative;
   line-height: 1.2;
+  background-color: #f3f3f3;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
 }
 .bio-intro::before {
   position: absolute;
@@ -169,11 +177,11 @@ button.hamburger {
   background-color: var(--pry-clr);
 }
 .bio-intro h1 {
-  font-size: clamp(1.8rem, 0.629rem + 6.69vw, 3rem);
+  font-size: clamp(1.8rem, 1.611rem + 1.08vw, 2rem);
   font-weight: 700;
 }
 .bio-intro h2 {
-  font-size: clamp(0.75rem, 0.213rem + 3.07vw, 1.3rem);
+  font-size: clamp(0.7rem, 0.132rem + 3.24vw, 1.3rem);
   font-weight: 800;
 }
 
@@ -282,3 +290,59 @@ button.hamburger {
 .footer-inner p {
   font-size: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
 }
+
+@media screen and (min-width: 577px) {
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
+    display: block;
+  }
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
+  }
+  .nav-desktop ul {
+    list-style: none;
+    display: flex;
+    gap: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .header-inner,
+  .main-inner,
+  .footer-inner {
+    padding: 0 clamp(1rem, -6.552rem + 20.94vw, 3.5rem);
+  }
+  .header-inner {
+    padding-top: clamp(0.3rem, -0.908rem + 3.35vw, 0.7rem);
+    padding-bottom: clamp(0.3rem, -0.908rem + 3.35vw, 0.7rem);
+  }
+  .profile-cont {
+    gap: clamp(1rem, -2.021rem + 8.38vw, 2rem);
+  }
+  .profile__avatar img {
+    max-width: clamp(10.625rem, 7.604rem + 8.38vw, 11.625rem);
+  }
+  .bio-intro {
+    line-height: 1.4;
+  }
+  .bio-intro h1 {
+    font-size: clamp(2rem, 0.49rem + 4.19vw, 2.5rem);
+  }
+  .bio-intro h2 {
+    font-size: clamp(1.3rem, 0.696rem + 1.68vw, 1.5rem);
+  }
+  .about-wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* @media screen and (min-width: 769px) and (max-width: 1200px) {
+  .profile-cont {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+} */
