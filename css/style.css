@@ -59,16 +59,13 @@ a, button {
   font-family: "Sono", monospace;
   font-variation-settings: "MONO" 1;
 }
-.web-container { /* GRID LAYOUT */
+.web-container {
+  max-width: 100%;
+  height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 0.5rem;
 }
-/* .web-container // FLEX LAYOUT
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-} */
 .header-inner,
 .main-inner,
 .footer-inner {
@@ -81,6 +78,8 @@ a, button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: var(--space-1) var(--space-4);
+  border-bottom: 1px solid lightgrey;
 }
 .logo-cont a {
   font-size: var(--fs-5);
@@ -105,14 +104,6 @@ button.hamburger {
 .nav-desktop {
   display: none;
 }
-/* button.hamburger:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px #fff;
-}
-button.hamburger:active {
-  transform: translateY(0);
-  box-shadow: 0 0 20px #fff;
-} */
 
 .profile-cont {
   display: flex;
@@ -216,7 +207,6 @@ button.hamburger:active {
 .about-wrapper {
   display: grid;
   gap: 0.5rem;
-  /* border: 1px solid #000; */
 }
 .profile__about {
   background-color: #fcffdf;
@@ -228,10 +218,19 @@ button.hamburger:active {
   border-radius: var(--radius-2);
   padding: var(--space-1) var(--radius-2);
 }
+.profile__skills ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.profile__skills ul li:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
 .about-wrapper h3 {
-  /* background-color: var(--light-clr); */
+  background-color: #fffffc;
   display: inline-block;
-  padding: var(--space-1) 0;
+  padding: 0 var(--space-1);
   border-radius: var(--radius-1);
   color: var(--pry-clr);
 }
@@ -251,14 +250,14 @@ button.hamburger:active {
 }
 .cta-m {
   background: var(--pry-clr);
-  color: var(--sec-clr);
+  color: var(--light-clr);
 }
 .cta-m:hover {
   background: var(--pry-clr-fade);
 }
 .cta-s {
   background: var(--sec-clr);
-  color: var(--pry-clr);
+  color: var(--dark-clr);
 }
 .cta-s:hover {
   background: var(--sec-clr-fade);
