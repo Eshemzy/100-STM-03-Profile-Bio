@@ -25,7 +25,7 @@
   --radius-5: 3rem;
 
   --pry-clr: #1908ba;
-  --pry-clr-fade: #200AEB;
+  --pry-clr-fade: #331ef3;
 
   --sec-clr: #a9ba08;
   --sec-clr-fade: #D5EB0A;
@@ -59,11 +59,16 @@ a, button {
   font-family: "Sono", monospace;
   font-variation-settings: "MONO" 1;
 }
-.web-container {
+.web-container { /* GRID LAYOUT */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 0.5rem;
+}
+/* .web-container // FLEX LAYOUT
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
+} */
 .header-inner,
 .main-inner,
 .footer-inner {
@@ -214,14 +219,14 @@ button.hamburger:active {
   /* border: 1px solid #000; */
 }
 .profile__about {
-  background-color: #faffc9;
-  padding: var(--space-1);
+  background-color: #fcffdf;
+  padding: var(--space-1) var(--radius-2);
   border-radius: var(--radius-2);
 }
 .profile__skills {
-  background-color: #dad5ff;
+  background-color: #f3f1ff;
   border-radius: var(--radius-2);
-  padding: var(--space-1);
+  padding: var(--space-1) var(--radius-2);
 }
 .about-wrapper h3 {
   /* background-color: var(--light-clr); */
@@ -239,15 +244,24 @@ button.hamburger:active {
   gap: var(--space-3);
 }
 .btn {
-  background: var(--pry-clr);
-  color: var(--light-clr);
   padding: var(--space-1);
   border-radius: var(--radius-1);
   font-weight: 600;
   transition: background 300ms ease;
 }
-.btn:hover {
+.cta-m {
+  background: var(--pry-clr);
+  color: var(--sec-clr);
+}
+.cta-m:hover {
   background: var(--pry-clr-fade);
+}
+.cta-s {
+  background: var(--sec-clr);
+  color: var(--pry-clr);
+}
+.cta-s:hover {
+  background: var(--sec-clr-fade);
 }
 
 .footer-inner {
