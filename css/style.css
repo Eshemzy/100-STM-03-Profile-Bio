@@ -73,13 +73,14 @@ a, button {
   margin-inline: auto;
   padding: 0 var(--space-2);
 }
-
+.site-header {
+  border-bottom: 1px solid lightgrey;
+}
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: clamp(0.1rem, -0.095rem + 1.11vw, 0.3rem) clamp(0.5rem, -0.476rem + 5.57vw, 1.5rem);
-  border-bottom: 1px solid lightgrey;
 }
 .logo-cont a {
   font-size: clamp(1.2rem, 0.42rem + 4.46vw, 2rem);
@@ -268,10 +269,11 @@ button.hamburger {
 .cta-s:hover {
   background: var(--sec-clr-fade);
 }
-
-.footer-inner {
+.site-footer {
   background: #212a37;
   color: #fff;
+}
+.footer-inner {
   display: flex;
   justify-content: center;
   align-items: center;
