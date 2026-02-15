@@ -66,12 +66,10 @@ a, button {
   grid-template-rows: auto 1fr auto;
   gap: 0.5rem;
 }
-.header-inner,
-.main-inner,
-.footer-inner {
+.main-inner {
   max-width: 1200px;
   margin-inline: auto;
-  padding: 0 var(--space-2);
+  padding: 0 clamp(0.5rem, -0.919rem + 8.11vw, 2rem);
 }
 .site-header {
   border-bottom: 1px solid lightgrey;
@@ -298,25 +296,40 @@ button.hamburger {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
   }
   .nav-desktop ul {
     list-style: none;
     display: flex;
-    gap: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
+  }
+  .nav-desktop ul li a {
+    display: inline-block;
+    font-weight: 500;
+    color: #000;
+    position: relative;
+  }
+  .bio-intro {
+    line-height: 1.4;
+  }
+  .about-wrapper {
+    grid-template-columns: 2fr 1fr;
   }
 }
 
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  .header-inner,
-  .main-inner,
-  .footer-inner {
-    padding: 0 clamp(1rem, -6.552rem + 20.94vw, 3.5rem);
+  .main-inner {
+    padding: 0 clamp(2rem, -10.084rem + 33.51vw, 6rem);
   }
-  .header-inner {
-    padding-top: clamp(0.3rem, -0.908rem + 3.35vw, 0.7rem);
-    padding-bottom: clamp(0.3rem, -0.908rem + 3.35vw, 0.7rem);
+  .header-inner,
+  .footer-inner {
+    padding: clamp(0.3rem, -0.908rem + 3.35vw, 0.7rem) clamp(2rem, -4.042rem + 16.75vw, 4rem);
+  }
+  .nav-desktop,
+  .nav-desktop ul {
+    gap: clamp(1.8rem, 1.196rem + 1.68vw, 2rem);
+  }
+  .nav-desktop ul li a {
+    font-size: clamp(0.8rem, 0.498rem + 0.84vw, 0.9rem);
   }
   .profile-cont {
     gap: clamp(1rem, -2.021rem + 8.38vw, 2rem);
@@ -324,30 +337,29 @@ button.hamburger {
   .profile__avatar img {
     max-width: clamp(10.625rem, 7.604rem + 8.38vw, 11.625rem);
   }
-  .bio-intro {
-    line-height: 1.4;
-  }
   .bio-intro h1 {
     font-size: clamp(2rem, 0.49rem + 4.19vw, 2.5rem);
   }
   .bio-intro h2 {
     font-size: clamp(1.3rem, 0.696rem + 1.68vw, 1.5rem);
   }
-  .about-wrapper {
-    grid-template-columns: 2fr 1fr;
-  }
 }
 
 
 @media screen and (min-width: 769px) {
-  .header-inner,
-  .main-inner,
-  .footer-inner {
-    padding: 0 3.5rem;
+  .main-inner {
+    padding: 0 6rem;
   }
-  .header-inner {
-    padding-top: 0.7rem;
-    padding-bottom:0.7rem;
+  .header-inner,
+  .footer-inner {
+    padding: 0.7rem 4rem;
+  }
+  .nav-desktop,
+  .nav-desktop ul {
+    gap: 2rem;
+  }
+  .nav-desktop ul li a {
+    font-size: 0.9rem;
   }
   .profile-cont {
     gap: 2rem;
@@ -355,19 +367,14 @@ button.hamburger {
   .profile__avatar img {
     max-width: 11.625rem;
   }
-  .bio-intro {
-    line-height: 1.4;
-  }
   .bio-intro h1 {
     font-size: 2.5rem;
   }
   .bio-intro h2 {
     font-size: 1.5rem;
   }
-  .about-wrapper {
-    grid-template-columns: 2fr 1fr;
-  }
 }
+
 
 
 /* @media screen and (min-width: 769px) and (max-width: 1200px) {
