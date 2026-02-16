@@ -122,21 +122,36 @@ button.hamburger {
   color: var(--light-clr);
 }
 .followers {
-  font-size: clamp(1.2rem, 0.42rem + 4.46vw, 2rem);
-  right: 40%;
-  top: 30%;
+  background: var(--sec-clr);
+  border: 1px solid lightgray;
+  box-shadow: 0 0 30px var(--sec-clr);
+  border-radius: clamp(0.8rem, 0.232rem + 3.24vw, 1.4rem);
+  padding: clamp(0.25rem, 0.014rem + 1.35vw, 0.5rem);
+  font-size: clamp(1.3rem, 0.165rem + 6.49vw, 2.5rem);
+  right: clamp(5rem, -0.676rem + 32.43vw, 11rem);
+  top: clamp(2.5rem, 2.027rem + 2.7vw, 3rem);
   transform: rotate(-25deg);
 }
 .likes {
+  background: var(--dark-clr);
+  box-shadow: 0 0 10px var(--light-clr);
+  border: 1px solid lightgray;
+  border-radius: clamp(0.6rem, 0.222rem + 2.16vw, 1rem);
+  padding: clamp(0.25rem, 0.014rem + 1.35vw, 0.5rem);
   font-size: clamp(0.9rem, 0.51rem + 2.23vw, 1.3rem);
-  right: 30%;
-  bottom: 10%;
+  right: clamp(4rem, 0.216rem + 21.62vw, 8rem);
+  bottom: clamp(1rem, 0.527rem + 2.7vw, 1.5rem);
   transform: rotate(25deg);
 }
 .views {
+  background: orange;
+  box-shadow: 0 0 20px orange;
+  border: 1px solid lightgray;
+  border-radius: clamp(0.7rem, 0.227rem + 2.7vw, 1.2rem);
+  padding: clamp(0.25rem, 0.014rem + 1.35vw, 0.5rem);
   font-size: clamp(1.1rem, 0.71rem + 2.23vw, 1.5rem);
-  right: 10%;
-  bottom: 40%;
+  right: clamp(0rem, -1.892rem + 10.81vw, 2rem);
+  bottom: clamp(4rem, 2.108rem + 10.81vw, 6rem);
   transform: rotate(-45deg);
 }
 .profile__avatar img {
@@ -381,11 +396,11 @@ button.hamburger {
   }
   .profile-cont {
     grid-template-columns: 1fr 2fr;
-    gap: 0.5rem;
+    gap: 0.25rem;
   }
   .profile__avatar {
     height: 100%;
-    border-radius: 50px 15px 15px 50px;
+    border-radius: 50px 15px 50px 15px;
   }
   .profile__avatar img {
     max-width: 15rem;
