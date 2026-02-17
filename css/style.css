@@ -316,10 +316,29 @@ button.hamburger {
   }
   .nav-desktop ul {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+  .nav-desktop ul li {
+    text-align: center;
+    position: relative;
+  }
+  .nav-desktop ul li::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+    transition: width 600ms ease;
+  }
+  .nav-desktop ul li:hover::after {
+    width: 100%;
   }
   .nav-desktop ul li a {
-    display: inline-block;
+    display: block;
     font-weight: 500;
     color: #000;
     position: relative;
