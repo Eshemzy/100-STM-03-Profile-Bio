@@ -1,7 +1,7 @@
 # 100-STM-03-Profile-Bio
 Layout Design for a Profile Bio Page
 
-Here is a Simple Single Page Profile Bio Layout Design. This project is part of my 100 Steps to Mastery challenge, where I build 100 HTML & CSS projects to deepen my frontend fundamentals.
+Here is a Simple Single Page Layout Design for a Profile Bio. This project is part of my 100 Steps to Mastery challenge, where I build 100 HTML & CSS projects to deepen my frontend fundamentals.
 
 I built this with:
 
