@@ -201,6 +201,7 @@ button.hamburger {
   padding: 0.15rem;
   border-radius: clamp(0.3rem, 0.105rem + 1.11vw, 0.5rem);
   font-size: clamp(0.7rem, 0.407rem + 1.67vw, 1rem);
+  flex: 1;
 }
 .html--stack {
   border-color: var(--pry-clr);
