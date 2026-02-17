@@ -266,7 +266,10 @@ button.hamburger {
   border-radius: clamp(0.25rem, 0.006rem + 1.39vw, 0.5rem);
   font-size: clamp(0.8rem, 0.605rem + 1.11vw, 1rem);
   font-weight: 600;
-  transition: background 300ms ease;
+  transition: background 300ms ease, transform 300ms ease, box-shadow 300ms ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
 }
 .cta-m {
   background: var(--pry-clr);
@@ -274,6 +277,7 @@ button.hamburger {
 }
 .cta-m:hover {
   background: var(--pry-clr-fade);
+  box-shadow: 0 4px var(--sec-clr-fade);
 }
 .cta-s {
   background: var(--sec-clr);
@@ -281,6 +285,7 @@ button.hamburger {
 }
 .cta-s:hover {
   background: var(--sec-clr-fade);
+  box-shadow: 0 4px var(--pry-clr);
 }
 .site-footer {
   background: #212a37;
