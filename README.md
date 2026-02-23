@@ -14,11 +14,12 @@ Core Skill Focus
 - Box Model
 - Flexbox
 - Grid
-- Responsiveness
-- Alignment
-- Spacing
-- Positioning
+- Responsiveness - switch to column layout
+- Alignment & Positioning (image + content)
+- Spacing rhythm
+- Managing text line-length
 - Animation
+- Controlling max-width
 
 To view Live Page, Pls Click Here :
 
